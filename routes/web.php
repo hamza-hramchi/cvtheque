@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/profile','UserController@profile');
 Route::post('/profile','UserController@update_avatar');
 Route::get('/search','CvController@search');
-
+Route::get('/about','CvController@about');
 
 Route::get('cvs','CvController@index');
 Route::get('cvs/create','CvController@create');

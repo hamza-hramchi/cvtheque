@@ -346,5 +346,9 @@ class CvController extends Controller
         return view('cv.index',['cvs' => $cvs]);
      }
 
+     public function about(){
+        return view('cv.about');
+     }
+
 
 }

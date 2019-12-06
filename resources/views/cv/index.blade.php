@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -15,14 +17,18 @@
 			
 			
 
-			<div class="pull-right">
+			<div class="float-right">
 				<a href="{{ url('cvs/create') }}" class="btn btn-success text-right">Nouveau Cv</a>
 			</div>
+
 			<!--search-->
 			<div class="col-md-4">
-				<form action="/search" method="get">
+
+			
+
+				<form action="/search" method="get"> <!--action =/search --->
 					<div class="form-group">
-						<input type="search" name="search" class="form-control" value="{{old('search')}}">
+						<input type="search" name="search" class="form-control" value="" placeholder="search" >
 						<span class="form-group-btn">
 							<button type="submit" class="btn btn-primary">Search</button>
 						</span>
@@ -30,6 +36,8 @@
 				</form>
 			</div>
 		<!--end serach-->
+
+
 
 			<br>
 
@@ -77,9 +85,9 @@ CAN policy : masquer le bouton supprimer pour l'admin
 
 			</table> -->
 
-		<div class="row">
+		<div class="row" >
 			@foreach($cvs as $cv)
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-4" >
 					<div class="thumbnail">
 						<img src="{{ asset('storage/'.$cv->image) }}" alt="" class="img-thumbnail" width="200px" height="200px">
 						<div class="caption">
