@@ -76,7 +76,7 @@
 
 							</div>
 
-							<button v-if="editFormations" class="btn btn-danger btn-block" @click="updateFormations">Modifier</button>	
+							<button v-if="editFormations" class="btn btn-warning btn-block" @click="updateFormations">Modifier</button>	
 
 							<button v-else class="btn btn-success btn-block"  @click="addFormations">Ajouter</button>
 

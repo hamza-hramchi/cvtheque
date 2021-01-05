@@ -20,13 +20,14 @@ use App\Langue;
 use App\User;
 
 use Auth;
+use Illuminate\Support\Facades\Auth as FacadesAuth;
 
 class CvController extends Controller
 {
 
     //constructeur
     public function __construct(){
-         $this->middleware('auth');
+         $this->middleware('auth')->only(['create']);
     }
 
 	/*Lister les CVs*/
@@ -64,7 +65,7 @@ class CvController extends Controller
 
        $cv->titre = $request->input('titre');
        $cv->presentation = $request->input('presentation');
-       $cv->user_id = Auth::user()->id; // récuperer le ID de celui qui crée le CV
+       $cv->user_id = FacadesAuth::user()->id; // récuperer le ID de celui qui crée le CV
 
        /*upload photo*/
        if($request->hasFile('image')){
