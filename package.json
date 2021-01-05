@@ -10,24 +10,24 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@babel/preset-react": "^7.0.0",
-        "axios": "^0.19.0",
-        "bootstrap": "^4.0.0",
+        "@babel/preset-react": "^7.12.10",
+        "axios": "^0.21.1",
+        "bootstrap": "^4.5.3",
         "cross-env": "^5.1",
         "install-peers": "^1.0.3",
-        "jquery": "^3.2",
+        "jquery": "^3.5.1",
         "laravel-mix": "^4.0.7",
-        "lodash": "^4.17.13",
-        "popper.js": "^1.12",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
+        "lodash": "^4.17.20",
+        "popper.js": "^1.16.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
         "resolve-url-loader": "2.3.1",
-        "sass": "^1.20.1",
+        "sass": "^1.32.0",
         "sass-loader": "7.*"
     },
     "dependencies": {
-        "sweetalert2": "^9.3.11",
-        "vee-validate": "^3.0.11",
+        "sweetalert2": "^9.17.2",
+        "vee-validate": "^3.4.5",
         "winston": "0.6.2",
         "winston-mail": "0.2.3"
     }
